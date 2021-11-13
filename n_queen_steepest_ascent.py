@@ -41,21 +41,9 @@ def steepest_ascent(number_of_queens):
 
 
 if __name__ == '__main__':
-
-    # number_of_queens = 8
-    # number_of_episodes = 1000
-    # metadata = multi_steepest_ascent(number_of_episodes, number_of_queens)
-    # parse_output(metadata)
-    #
-    # number_of_queens = 10
-    # number_of_episodes = 1000
-    # metadata = multi_steepest_ascent(number_of_episodes, number_of_queens)
-    # parse_output(metadata)
+    number_of_queens = 8
+    number_of_episodes = 1000
+    metadata = multi_steepest_ascent(number_of_episodes, number_of_queens)
+    parse_output(metadata)
 
 
-    number_of_queens = 40
-    before = time.time()
-    metadata = at_least_one_solution_steepest_ascent(number_of_queens)
-    after = time.time()
-    print(after - before)
-# 59.67685055732727

@@ -45,4 +45,3 @@ if __name__ == '__main__':
     number_of_episodes = 1000
     metadata = multi_stochastic_hill_climbing(number_of_episodes, number_of_queens)
     parse_output(metadata)
-
