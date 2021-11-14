@@ -1,5 +1,4 @@
 from n_queen_common import *
-import time
 
 
 def get_lowest_heuristic_state(states):
@@ -37,7 +36,7 @@ def steepest_ascent(number_of_queens):
         else:
             last_heuristic_value = best_value
             step_counter += 1
-    return successful, step_counter
+    return successful, step_counter, best_state
 
 
 if __name__ == '__main__':
@@ -45,5 +44,6 @@ if __name__ == '__main__':
     number_of_episodes = 1000
     metadata = multi_steepest_ascent(number_of_episodes, number_of_queens)
     parse_output(metadata)
+
 
 

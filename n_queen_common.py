@@ -70,17 +70,19 @@ def parse_output(metadata_list):
     successful_counter = 0
     successful_step_counter = 0
     unsuccessful_step_counter = 0
+    successful_states = list()
     for metadata in metadata_list:
         steps = metadata[1]
         if metadata[0]:
             successful_counter += 1
             successful_step_counter += steps
+            successful_states.append(metadata[2])
         else:
             unsuccessful_step_counter += steps
-    do_print(total_length, successful_counter, successful_step_counter, unsuccessful_step_counter)
+    do_print(total_length, successful_counter, successful_step_counter, unsuccessful_step_counter, successful_states)
 
 
-def do_print(total_length, successful_counter, successful_step_counter, unsuccessful_step_counter):
+def do_print(total_length, successful_counter, successful_step_counter, unsuccessful_step_counter, successful_states):
     print(f"Number of episodes: {total_length}")
     print(f"Number of successful episodes: {successful_counter}")
     if successful_counter > 0:
@@ -95,6 +97,9 @@ def do_print(total_length, successful_counter, successful_step_counter, unsucces
         avg_step_per_unsuccess = "Undefined"
     print(f"Number of unsuccessful episodes: {unsuccessful_counter}")
     print(f"Average step per unsuccessful episode: {avg_step_per_unsuccess}")
+
+    for state in successful_states:
+        print(state)
 
 
 def multi(number_of_episodes, number_of_queens, algorithm_function):

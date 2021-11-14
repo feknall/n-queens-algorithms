@@ -37,7 +37,7 @@ def stochastic_hill_climbing(number_of_queens):
             selected_state = random.choice(feasible_states)
             last_heuristic_value = heuristic(selected_state)
             step_counter += 1
-    return successful, step_counter
+    return successful, step_counter, selected_state
 
 
 if __name__ == '__main__':
@@ -45,3 +45,6 @@ if __name__ == '__main__':
     number_of_episodes = 1000
     metadata = multi_stochastic_hill_climbing(number_of_episodes, number_of_queens)
     parse_output(metadata)
+
+
+
