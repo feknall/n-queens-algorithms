@@ -4,7 +4,7 @@ This repository contains implementations of some famous algorithms for the n-que
 # How to Run
 Very simple, just use python and run one of the scripts that you need.
 
-# Output
+## Output of Steepest Ascent Hill-Climbing Algorithm
 ```
 python n_queen_steepest_ascent.py
 ```
@@ -39,6 +39,7 @@ Average step per unsuccessful episode: 2.5714285714285716
  [0 0 0 0 0 0 1 0]
  [0 0 0 0 1 0 0 0]]
 ```
+## Output of Stochastic Hill-Climbing Algorithm
 ```
 python n_queen_stochastic.py
 ```
