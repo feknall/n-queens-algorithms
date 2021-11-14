@@ -6,7 +6,7 @@ Very simple, just use python and run one of the scripts that you need.
 
 # Output
 ```
-n_queen_steepest_ascent.py
+python n_queen_steepest_ascent.py
 ```
 ```
 Number of episodes: 10
@@ -40,7 +40,7 @@ Average step per unsuccessful episode: 2.5714285714285716
  [0 0 0 0 1 0 0 0]]
 ```
 ```
-n_queen_stochastic.py
+python n_queen_stochastic.py
 ```
 ```
 Number of episodes: 10
