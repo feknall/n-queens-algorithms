@@ -6,7 +6,7 @@ Very simple, just use python and run one of the scripts that you need.
 
 ## Output of Steepest Ascent Hill-Climbing Algorithm
 ```
-python n_queen_steepest_ascent.py
+$ python n_queen_steepest_ascent.py
 ```
 ```
 Number of episodes: 10
@@ -41,7 +41,7 @@ Average step per unsuccessful episode: 2.5714285714285716
 ```
 ## Output of Stochastic Hill-Climbing Algorithm
 ```
-python n_queen_stochastic.py
+$ python n_queen_stochastic.py
 ```
 ```
 Number of episodes: 10
