@@ -1,6 +1,9 @@
 # n-queens-algorithms
 This repository contains implementations of some famous algorithms for the n-queens problem.
 
+# How to Run
+Very simple, just use python and run one of the scripts that you need.
+
 # Output
 ```
 n_queen_steepest_ascent.py
